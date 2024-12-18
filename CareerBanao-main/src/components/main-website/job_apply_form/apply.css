@@ -1,0 +1,12 @@
+.candidateForm {
+  padding-top: 95px;
+  margin: 0 20px;
+}
+
+.formHeading {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}

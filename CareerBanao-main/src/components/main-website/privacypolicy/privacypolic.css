@@ -1,0 +1,49 @@
+.privacy-policy-section1 p {
+    margin: 1rem 0;
+    font-size: 14px;
+    color: #050038;
+
+}
+.privacy-policy-section1 strong{
+    color: #050038;
+}
+.privacy-policy-section1 h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #050038;
+}
+.privacy-policy-section1 ul li{
+    list-style: disc;
+    margin: 1rem;
+    color: #050038;
+}
+.privacy-policy-section1 ul{
+    padding: 0 2rem;
+    color: #050038;
+}
+.privacy-policy-section1 ol li{
+    list-style: decimal ;
+
+}
+.privacy-policy-section1 ol li::marker{
+    font-weight: 700;
+    color: #050038;
+}
+.form-input input, .ant-select{
+    width: 25%;
+    height: 2.5rem;
+}
+@media (max-width:768px) {
+    .form{
+        padding: 0 2rem;
+    }
+    .privacy-policy-section1 ul{
+        padding: 0 0;
+    }
+   
+    .form-input input , .ant-select{
+        width: 100%;
+        height: 2.5rem;
+        margin: 10px 0;
+    }
+}

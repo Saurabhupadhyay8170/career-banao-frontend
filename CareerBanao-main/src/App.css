@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.ant-btn-primary {
+  background-color: #e67e22;
+}
+.ant-dropdown .ant-dropdown-menu {
+  background-color: #34495e;
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+.ant-dropdown .ant-dropdown-menu li span {
+  color: white;
+  width: 8rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+.ant-select .ant-select-selector {
+  background-color: #f9fafb !important;
+}
+
+.card-layout {
+  padding: 1rem;
+  border-top: 5px solid orange;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+.card-layout:hover {
+  box-shadow: 0 15px 20px -14px rgba(0, 0, 0, 0.25);
+}
+.btn-shadow {
+  box-shadow: 0 20px 24px 3px rgba(251, 161, 40, 0.42);
+}
+
+.marqueeContainer {
+  overflow: hidden;
+  position: relative;
+}
+.myMarquee {
+  animation: marquee 15s linear infinite;
+  white-space: nowrap;
+}
+.myMarquee:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* --------------- contact -------------- */
+
+.contact-left::after {
+  content: "";
+  background: #afafb6;
+  height: 50%;
+  position: absolute;
+  left: 35%;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 2px;
+}
+@media (max-width: 1024px) {
+  .contact-main {
+    box-shadow: none !important;
+  }
+  .contact-left::after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navlinks {
+    display: none;
+  }
+  .myMarquee {
+    font-size: 12px;
+  }
+}
+
+.slick-dots li {
+  background: none;
+}

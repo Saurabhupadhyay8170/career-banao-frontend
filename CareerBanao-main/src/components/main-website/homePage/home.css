@@ -1,0 +1,87 @@
+.img-card {
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  height: 150px;
+  justify-content: center;
+  margin-inline: 0.78rem;
+  width: 150px;
+}
+.section-3-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 54%,
+    rgba(232, 190, 35, 0.5) 100%
+  );
+}
+.hover-card {
+  cursor: pointer;
+}
+.hover-card:hover {
+  background: #e8e8e8;
+}
+
+/* --------------------- section-6 css ------------------- */
+.Section-6 .main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  margin: 2rem;
+}
+
+.section-6-card p::before {
+  content: "“";
+}
+.section-6-card p::after {
+  content: "”";
+  line-height: 0;
+}
+
+.section-6-card p:after,
+.section-6-card p:before {
+  color: #0c0c0cf5;
+  font-family: monospace;
+  font-size: 26px;
+  font-weight: 100;
+}
+
+.section-6-card .feedback {
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.card-container {
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  /* width: 35%; */
+}
+
+/* ---------------------------- section-6 media queries -------------------- */
+
+@media (max-width: 768px) {
+  .Section-6 .main-container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .section-6-card .feedback {
+    font-size: 15px;
+    line-height: 24px;
+    padding-bottom: 2rem;
+  }
+  .Section-6 h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .img-card {
+    height: 250px;
+    justify-content: center;
+    margin-inline: 0.78rem;
+    width: 250px;
+  }
+  .img-card img {
+    width: 60%;
+    height: 60%;
+  }
+}
